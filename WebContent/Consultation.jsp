@@ -12,10 +12,12 @@
 		scope="request"></jsp:useBean>
 
 	<jsp:setProperty property="*" name="MonBean" />
-
-	Le solde de :
+	
+	Le compte numéro :
+	<jsp:getProperty property="numCompte" name="MonBean" />
+	Appartient à :
 	<jsp:getProperty property="proprietaire" name="MonBean" />
-	est de :
+	Et possède :
 	<jsp:getProperty property="solde" name="MonBean" />
 
 </body>
